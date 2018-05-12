@@ -1,0 +1,168 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fdfcf6; }
+
+a {
+  color: #14c0c9;
+  text-decoration: none; }
+  a:visited {
+    color: #0f949b; }
+  a:hover {
+    color: #0f949b; }
+  a:active {
+    color: #16d6e0; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center, section .container, #skills i {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Font
+------------------------------------------------------------*/
+.abel, section h2, #skills h3 {
+  font-family: 'Abel', sans-serif; }
+
+.uppercase, section h2, #skills h3, #works .works-box a .works-box-inner .button-readmore {
+  text-transform: uppercase; }
+
+/* Header
+------------------------------------------------------------*/
+
+header .main_img {
+  width: 100%;
+  height: 500px;
+  background: url('../images/gazou1.jpg');
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0 auto;
+  clear: both; }
+header .main_title {
+  font-size: 5.0rem;
+  color: #FFFFFF;
+  position: relative;
+  top: 5px;
+  left: 20px;
+  line-height: normal; }
+header p {
+  font-size: 1.6rem;
+  position: relative;
+  left: 25px; }
+
+/* Contents
+------------------------------------------------------------*/
+section {
+  padding: 60px 0; }
+  section .container {
+    width: 90%; }
+  section h2 {
+    font-size: 3.2rem; }
+
+#skills {
+  background-color: #9DCCE0; }
+  #skills .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  #skills h2 {
+    color: #fdfcf6;
+    margin-bottom: 60px; }
+  #skills .skill-box {
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #fdfcf6;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  #skills h3 {
+    color: #14c0c9;
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: bold; }
+
+
+#contact {
+  background-color: #FFFFFF; }
+#contact .square_btn{
+    display: inline-block;
+    padding: 0.5em 10em;
+    font-weight: bold;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+.square_btn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+/* Footer
+------------------------------------------------------------*/
+footer {
+  background-color: #9DCCE0;
+  padding: 10px 0;
+  text-align: center;
+  color: #FFF; }
+
+@media (min-width: 769px) {
+  /* Base
+  ------------------------------------------------------------*/
+  a:hover {
+    text-decoration: underline; }
+
+  /* Header
+  ------------------------------------------------------------*/
+  .button-contact:hover, .button-contact:active {
+    background-color: #4c4c4c;
+    color: #FFF; }
+
+  #skills .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  #skills .skill-box {
+    margin: 0 10px; }
+
+  #works .works-box {
+    width: 33.33333%; }
+    #works .works-box a .works-box-inner {
+      display: none;
+      width: 0%; }
+      #works .works-box a .works-box-inner .button-readmore:hover {
+        background-color: #0f949b; }
+    #works .works-box a:hover .works-box-inner {
+      display: block;
+      width: 100%; }
+
+  #contact ul a:hover {
+    background-color: #0f949b; } }
+
+/*# sourceMappingURL=style.css.map */
