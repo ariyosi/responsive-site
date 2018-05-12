@@ -30,17 +30,17 @@ a {
 
 /* Layout
 ------------------------------------------------------------*/
-.block-center, section .container, #skills i {
+.block-center, section .container, #textran i {
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
 /* Font
 ------------------------------------------------------------*/
-.abel, section h2, #skills h3 {
+.abel, section h2, #textran h3 {
   font-family: 'Abel', sans-serif; }
 
-.uppercase, section h2, #skills h3, #works .works-box a .works-box-inner .button-readmore {
+.uppercase, section h2, #textran h3 {
   text-transform: uppercase; }
 
 /* Header
@@ -48,11 +48,10 @@ a {
 
 header .main_img {
   width: 100%;
-  height: 500px;
+
   background: url('../images/gazou1.jpg');
   background-size: cover;
   margin: 0 auto;
-  padding: 0 auto;
   clear: both; }
 header .main_title {
   font-size: 5.0rem;
@@ -75,18 +74,18 @@ section {
   section h2 {
     font-size: 3.2rem; }
 
-#skills {
+#textran {
   background-color: #9DCCE0; }
-  #skills .container {
+  #textran .container {
     display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     -webkit-flex-direction: column;
     flex-direction: column; }
-  #skills h2 {
+  #textran h2 {
     color: #fdfcf6;
     margin-bottom: 60px; }
-  #skills .skill-box {
+  #textran .textran-box {
     -webkit-flex: 1;
     flex: 1;
     margin: 10px 0;
@@ -98,7 +97,7 @@ section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
-  #skills h3 {
+  #textran h3 {
     color: #14c0c9;
     margin-bottom: 10px;
     font-size: 2.4rem;
@@ -112,16 +111,16 @@ section {
     padding: 0.5em 10em;
     font-weight: bold;
     text-decoration: none;
-    background: #668ad8;/*ボタン色*/
+    background: #668ad8;
     color: #FFF;
     border-bottom: solid 4px #627295;
     border-radius: 3px;
 }
-.square_btn:active {/*ボタンを押したとき*/
+.square_btn:active {
     -ms-transform: translateY(4px);
     -webkit-transform: translateY(4px);
-    transform: translateY(4px);/*下に動く*/
-    border-bottom: none;/*線を消す*/
+    transform: translateY(4px);
+    border-bottom: none;
 }
 
 /* Footer
@@ -133,6 +132,10 @@ footer {
   color: #FFF; }
 
 @media (min-width: 769px) {
+    header .main_img {
+        height: 500px;
+    }
+
   /* Base
   ------------------------------------------------------------*/
   a:hover {
@@ -144,25 +147,20 @@ footer {
     background-color: #4c4c4c;
     color: #FFF; }
 
-  #skills .container {
+  #textran .container {
     -webkit-flex-direction: row;
     flex-direction: row;
     justify-content: space-between; }
-  #skills .skill-box {
+  #textran .textran-box {
     margin: 0 10px; }
-
-  #works .works-box {
-    width: 33.33333%; }
-    #works .works-box a .works-box-inner {
-      display: none;
-      width: 0%; }
-      #works .works-box a .works-box-inner .button-readmore:hover {
-        background-color: #0f949b; }
-    #works .works-box a:hover .works-box-inner {
-      display: block;
-      width: 100%; }
 
   #contact ul a:hover {
     background-color: #0f949b; } }
+
+@media (max-width: 768px) {
+    header .main_img {
+        height: 250px;
+    }
+}
 
 /*# sourceMappingURL=style.css.map */
