@@ -13,7 +13,7 @@ body {
   letter-spacing: 0.1em;
   background-color: #fdfcf6; }
 
-a {
+/*a {
   color: #14c0c9;
   text-decoration: none; }
   a:visited {
@@ -22,7 +22,7 @@ a {
     color: #0f949b; }
   a:active {
     color: #16d6e0; }
-
+*/
 /* Align
 ------------------------------------------------------------*/
 .text-center {
@@ -48,10 +48,12 @@ a {
 
 header .main_img {
   width: 100%;
-
   background: url('../images/gazou1.jpg');
   background-size: cover;
-  margin: 0 auto;
+/*    background-size:contain; */
+/*  background-size: cover; */
+/*  background-size:auto 250px; */
+/*  margin: 0 auto; */
   clear: both; }
 header .main_title {
   font-size: 5.0rem;
@@ -63,12 +65,13 @@ header .main_title {
 header p {
   font-size: 1.6rem;
   position: relative;
+  margin: 0px 40px 0 0;
   left: 25px; }
 
 /* Contents
 ------------------------------------------------------------*/
 section {
-  padding: 60px 0; }
+  padding: 30px 0; }
   section .container {
     width: 90%; }
   section h2 {
@@ -84,18 +87,18 @@ section {
     flex-direction: column; }
   #textran h2 {
     color: #fdfcf6;
-    margin-bottom: 60px; }
+    margin-bottom: 30px; }
   #textran .textran-box {
     -webkit-flex: 1;
     flex: 1;
     margin: 10px 0;
     padding: 20px;
     background-color: #fdfcf6;
-    -moz-border-radius: 4px;
+/*    -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
     -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    -webkit-box-sizing: border-box;*/
     box-sizing: border-box; }
   #textran h3 {
     color: #14c0c9;
@@ -157,10 +160,13 @@ footer {
   #contact ul a:hover {
     background-color: #0f949b; } }
 
+
+/*sumaho  */
 @media (max-width: 768px) {
     header .main_img {
         height: 250px;
     }
 }
+
 
 /*# sourceMappingURL=style.css.map */
