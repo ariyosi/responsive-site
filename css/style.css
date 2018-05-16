@@ -47,6 +47,8 @@ body {
 ------------------------------------------------------------*/
 
 header .main_img {
+  padding: 5px 0 0 20px;
+  box-sizing: border-box; /* paddingを無視して幅100%に設定*/
   width: 100%;
   background: url('../images/gazou1.jpg');
   background-size: cover;
@@ -58,15 +60,15 @@ header .main_img {
 header .main_title {
   font-size: 5.0rem;
   color: #FFFFFF;
-  position: relative;
-  top: 5px;
-  left: 20px;
+/*  position: relative; */
+  /*top: 5px;*/
+  /*left: 20px;*/
   line-height: normal; }
 header p {
   font-size: 1.6rem;
-  position: relative;
-  margin: 0px 40px 0 0;
-  left: 25px; }
+/*  position: relative; */
+  /*margin: 0px 40px 0 0;*/
+  /*left: 25px; */}
 
 /* Contents
 ------------------------------------------------------------*/
